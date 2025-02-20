@@ -7,7 +7,7 @@ function toggleDarkMode(){
 
 function updateButtonText(){
     const button = document.querySelector(".dark-mode-toggle");
-    if (localStorage.getItem('theme') === 'dark') {
+    if (localStorage.getItem('theme') === 'dark') {git 
         button.textContent = "Light Mode";
     } else {
         button.textContent = "Dark Mode";
