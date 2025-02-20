@@ -48,6 +48,11 @@ nav ul li a:hover {
     color: #ff9800;
 }
 
+.active-page {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff9800 !important;
+}
 
 button.dark-mode-toggle {
     background-color: #333;
@@ -89,7 +94,7 @@ section h2 {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    transition: tranform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .project img:hover {
@@ -100,11 +105,11 @@ section h2 {
     text-align: center;
 }
 
-.social-buttons{
+.social-buttons {
     margin-top: 1rem;
 }
 
-.social-btn{
+.social-btn {
     display: inline-block;
     background-color: #333;
     color: #fff;
@@ -113,23 +118,16 @@ section h2 {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
 }
 
 .social-btn:hover {
     background-color: #555;
-    transform: scale(1.1px);
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #333;
     text-align: center;
     color: #fff;
-    padding: 1rem ;
-}
-
-.active-page {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #ff9800 !important;
+    padding: 1rem;
 }
