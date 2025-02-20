@@ -4,7 +4,12 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
 
+.dark-mode{
+    background-color: #1a1a1a;
+    color: #f4f4f4;
 }
 
 .my_header {
@@ -15,26 +20,31 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.5s;
 }
 
-header nav ul {
+.dark-mode .my_header {
+    background-color: #111;
+}
+
+ nav ul {
     list-style-type: none;
     padding: 0;
     margin:0;
 }
 
-header nav ul li {
+ nav ul li {
     display: inline;
     margin:0 30px;
 }
 
-header nav ul li a{
+ nav ul li a{
     color: #fff;
     text-decoration: none   ;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+ nav ul li a:hover {
     color : #ccc;
 }
 
@@ -45,8 +55,32 @@ section {
     max-width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.5s;
 }
 
+.dark-mode section {
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+button.dark-mode-toggle{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px, 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.dark-mode-toggle:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+.dark-mode button.dark-mode-toggle{
+    background-color: #444;
+}
 section h2 {
     text-align: center;
     margin-bottom: 1rem;
