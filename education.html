@@ -1,25 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadhika Huria - Portfolio</title>
-
+    <title>Sadhika Huria - Education</title>
     <link rel="icon" href= "favicon.io">
     <link rel="stylesheet" href="./style.css">
+
     <script>
         function toggleDarkMode(){
             document.body.classList.toggle('dark-mode');
             const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
             localStorage.setIten('theme', mode);
+            updateButtonText();
 
+        }
+
+        function updateButtonText(){
+            const button = document.querySelector(".dark-mode-toggle");
+            if (localStorage.getItem('theme') == 'dark') {
+                button.innerText = "Light Mode";
+            } else {
+                button.innerText = "Dark Mode";
+            }
         }
 
         document.addEventListener("DOMContentLoaded", () => {
             if (localStroage.getIten('theme') == 'dark') {
                 document.body.classList.add('dark-mode');
             }
+            updateButtonText();
         });
     </script>
+
 </head>
 
 <body>
@@ -35,7 +48,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        </div>
     </header>
     
     <section id = "education">

@@ -12,13 +12,24 @@
             document.body.classList.toggle('dark-mode');
             const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
             localStorage.setIten('theme', mode);
+            updateButtonText();
 
+        }
+
+        function updateButtonText(){
+            const button = document.querySelector(".dark-mode-toggle");
+            if (localStorage.getItem('theme') == 'dark') {
+                button.innerText = "Light Mode";
+            } else {
+                button.innerText = "Dark Mode";
+            }
         }
 
         document.addEventListener("DOMContentLoaded", () => {
             if (localStroage.getIten('theme') == 'dark') {
                 document.body.classList.add('dark-mode');
             }
+            updateButtonText();
         });
     </script>
 
@@ -37,7 +48,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        </div>
     </header>
 
     <section id = "home">
