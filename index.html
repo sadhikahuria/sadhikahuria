@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./style.css">
 
     <script>
-        function toogleDarkMode(){
+        function toggleDarkMode(){
             document.body.classList.toggle('dark-mode');
             const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorange.setIten('theme', mode);
+            localStorage.setIten('theme', mode);
 
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            if (localStronage.getIten('theme') == 'dark') {
+            if (localStroage.getIten('theme') == 'dark') {
                 document.body.classList.add('dark-mode');
             }
         });

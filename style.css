@@ -60,9 +60,12 @@ section {
 
 .dark-mode section {
     background-color: #222;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    box-shadow: #f4f4f4;
 }
 
+.dark-mode .section-btn {
+    background-color: #444;
+}
 button.dark-mode-toggle{
     background-color: #333;
     color: #fff;
@@ -75,7 +78,7 @@ button.dark-mode-toggle{
 
 button.dark-mode-toggle:hover {
     background-color: #ff9800;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .dark-mode button.dark-mode-toggle{
