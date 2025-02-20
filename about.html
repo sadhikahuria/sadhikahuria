@@ -6,6 +6,13 @@
 
     <link rel="icon" href= "favicon.io">
     <link rel="stylesheet" href="./style.css">
+    <script> 
+        document.addEventListener(DOMContentLoaded, () => {
+            if (localStorage.getItem('theme') == 'dark') {
+                document.body.classList.add('dark-moce');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -27,8 +34,8 @@
     <section id = "aboutMe">
         <h2>About Me</h2>
         <img src="./img/profile-photo.jpg" alt= "Sadhika Huria" class="profile-photo">
-        <p>Hello! My name is Sadhika. I will add more bio later.</p>
-        <p>learn more about my work on 
+        <p>Hello! My name is Sadhika. I am passionate about software development and AI.</p>
+        <p>Learn more about my work on 
             <a href = "https://github.com/sadhikahuria" target = "_blank">GitHub</a>
              or connect with me on 
             <a href ="https://www.linkedin.com/in/sadhika-huria-534b00269/" target="_blank">LinkedIn</a>.
@@ -37,6 +44,7 @@
 
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
+        <button onclick="toggleDarkMode()" class="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
 
 </body>

@@ -6,6 +6,13 @@
 
     <link rel="icon" href= "favicon.io">
     <link rel="stylesheet" href="./style.css">
+    <script> 
+        document.addEventListener(DOMContentLoaded, () => {
+            if (localStorage.getItem('theme') == 'dark') {
+                document.body.classList.add('dark-moce');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -46,6 +53,7 @@
     </section>
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
+        <button onclick="toggleDarkMode()" class="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
 
 </body>
