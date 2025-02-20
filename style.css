@@ -47,7 +47,7 @@ section h2 {
 .profile-photo {
     display: block;
     margin: 0 auto 1rem;
-    max-width: auto;
+    max-width: 100px;
     border-radius: 50%;
 }
 
