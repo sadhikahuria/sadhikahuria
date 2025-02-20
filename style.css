@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,7 +7,7 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.dark-mode{
+.dark-mode {
     background-color: #1a1a1a;
     color: #f4f4f4;
 }
@@ -27,50 +27,38 @@ body {
     background-color: #111;
 }
 
- nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
- nav ul li {
+nav ul li {
     display: inline;
-    margin:0 30px;
+    margin: 0 15px;
 }
 
- nav ul li a{
+nav ul li a {
     color: #fff;
-    text-decoration: none   ;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
- nav ul li a:hover {
-    color : #ccc;
+nav ul li a:hover {
+    color: #ff9800;
 }
 
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    border-radius: 5px;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: background-color 0.5s;
+.active-page {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff9800 !important;
 }
 
-.dark-mode section {
-    background-color: #222;
-    box-shadow: #f4f4f4;
-}
-
-.dark-mode .section-btn {
-    background-color: #444;
-}
-button.dark-mode-toggle{
+button.dark-mode-toggle {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px, 15px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
@@ -81,72 +69,6 @@ button.dark-mode-toggle:hover {
     transform: scale(1.1);
 }
 
-.dark-mode button.dark-mode-toggle{
+.dark-mode button.dark-mode-toggle {
     background-color: #444;
-}
-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.profile-photo {
-    display: block;
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 35%;
-    margin: 0 auto 1rem;
-}
-
-.project {
-    margin-bottom: 2rem;
-}
-
-.project img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    transition: tranform 0.3s ease;
-}
-
-.project img:hover {
-    transform: scale(1.05);
-}
-
-#social {
-    text-align: center;
-}
-
-.social-buttons{
-    margin-top: 1rem;
-}
-
-.social-btn{
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5em 1em;
-    margin: 0.5em;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-
-}
-
-.social-btn:hover {
-    background-color: #555;
-    transform: scale(1.1px);
-}
-
-footer {
-    background-color: #333;
-    text-align: center;
-    color: #fff;
-    padding: 1rem ;
-}
-
-.active-page {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #ff9800 !important;
 }
