@@ -144,3 +144,9 @@ footer {
     color: #fff;
     padding: 1rem ;
 }
+
+.active-page {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff9800 !important;
+}
