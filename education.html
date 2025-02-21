@@ -6,35 +6,60 @@
     <title>Sadhika Huria - Education</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-
     <script src="script.js"></script>
-
 </head>
 
 <body>
-    <header class = "my_header">
+    <header class="my_header">
         <h1>Sadhika Huria</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="education.html">Education</a></li>
+                <li><a href="education.html" class="active-page">Education</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id = "education">
+    <section id="education">
         <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item" data-year="2023-2028">
+                🎓 <strong>Simon Fraser University (SFU)</strong>
+                <p>Bachelor of Science in Computer Science</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Important Courses</h2>
+        <div class="courses-grid">
+            <div class="course completed">✅ <strong>MATH 152</strong> - Calculus II (Spring 2024)</div>
+            <div class="course completed">✅ <strong>MATH 232</strong> - Applied Linear Algebra (Spring 2024)</div>
+            <div class="course upcoming">📅 <strong>BUS 232</strong> - Business Statistics (Summer 2024)</div>
+            <div class="course completed">✅ <strong>CMPT 225</strong> - Data Structures and Programming (Fall 2024)</div>
+            <div class="course in-progress">⏳ <strong>CMPT 201</strong> - Systems Programming (Spring 2025)</div>
+            <div class="course in-progress">⏳ <strong>CMPT 276</strong> - Intro to Software Engineering</div>
+            <div class="course in-progress">⏳ <strong>CMPT 310</strong> - Intro to Artificial Intelligence</div>
+        </div>
+    </section>
+    
+    <section id="outside-learning">
+        <h2>Outside Learning</h2>
+        <div class="learning-card">
+            <h3>The Odin Project</h3>
+            <p>📅 <strong>Expected Completion:</strong> Summer 2024 - Spring 2026</p>
+            <p>🌐 <a href="https://www.theodinproject.com" target="_blank">www.theodinproject.com</a></p>
+            <p>🖥️ The Odin Project is a free, open-source full-stack curriculum that teaches web development from scratch to an advanced level. It is a project-based course emphasizing hands-on learning through practical application.</p>
+        </div>
     </section>
     
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
         <button onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</button>
     </footer>
-
-
 </body>
 </html>
