@@ -7,11 +7,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="script.js"></script>
-
 </head>
-
 <body>
-    <header class = "my_header">
+    <header class="my_header">
         <h1>Sadhika Huria</h1>
         <nav>
             <ul>
@@ -25,34 +23,38 @@
         </nav>
     </header>
     
-    <section id = "projects">
+    <section id="projects" class="projects-container">
+        <h2>My Projects</h2>
+        <p>Here are some of the exciting projects I've worked on. Feel free to explore their details!</p>
+        
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="./img/puzzle-project.jpg" alt="Capstone Puzzle Painting" class="project-image">
+                <div class="project-content">
+                    <h3>Capstone Puzzle Painting</h3>
+                    <p>A high school capstone project featuring a large painting of a puzzle. Each piece represented a desire, hobby, passion, or goal of mine at that time. The painting depicted my dreams as scattered puzzle pieces, waiting to be solved.</p>
+                    <button class="expand-btn" onclick="toggleDescription('puzzle-desc')">Learn More</button>
+                    <p id="puzzle-desc" class="project-desc hidden">The painting consisted of 10 puzzle pieces, each uniquely designed to represent a part of my identity. It was a deeply personal artistic expression reflecting my aspirations and the journey towards fulfilling them.</p>
+                </div>
+            </article>
 
-        <h2>Projects</h2>
-
-        <article class = "project">
-            <h3>Project One</h3>
-            <img src = "./img/portfolio.jpg" alt = "Picture of Project one">
-            <p>This is the brief description. Use this as a template. You can checkout the code on <a href ="https://github.com/sadhikahuria" target = "_blank">GitHub</a>.</p>
-        </article>
-
-        <article class = "project">
-            <h3>Project Two</h3>
-            <img src = "./img/portfolio.jpg" alt = "Picture of Project twp">
-            <p>This is the brief description. Use this as a template. You can checkout the code on <a href ="https://github.com/sadhikahuria" target = "_blank">GitHub</a>.</p>
-        </article>
-
-        <article class = "project">
-            <h3>Project Three</h3>
-            <img src = "./img/portfolio.jpg" alt = "Picture of Project three">
-            <p>This is the brief description. Use this as a template. You can checkout the code on <a href ="https://github.com/sadhikahuria" target = "_blank">GitHub</a>.</p>
-        </article>
-
+            <article class="project-card">
+                <img src="./img/shell-project.jpg" alt="Shell Implementation" class="project-image">
+                <div class="project-content">
+                    <h3>Shell Implementation</h3>
+                    <p>A custom shell built in a Linux-based environment using low-level C programming. The shell uses functions like fork, exec, and wait to handle processes. Additionally, I implemented internal commands like <code>cd</code>, <code>pwd</code>, <code>help</code>, and <code>exit</code>, while most commands relied on external execution.</p>
+                    <button class="expand-btn" onclick="toggleDescription('shell-desc')">Learn More</button>
+                    <p id="shell-desc" class="project-desc hidden">This shell was compiled using Clang in a Docker container on Windows. Signal handling was implemented to manage interruptions effectively. It was a great learning experience in process control and low-level system programming.</p>
+                </div>
+            </article>
+        </div>
     </section>
+    
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
         <button onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</button>
     </footer>
-
+    
 
 </body>
 </html>

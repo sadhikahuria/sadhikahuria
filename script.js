@@ -34,3 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateButtonText();
     highlightCurrentPage();
 });
+
+function toggleDescription(id) {
+    const desc = document.getElementById(id);
+    desc.classList.toggle('hidden');
+}
