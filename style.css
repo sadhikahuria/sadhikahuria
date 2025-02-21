@@ -594,6 +594,7 @@ nav ul li a:hover {
     color: #ffffff;
     text-decoration: none ;
     font-weight: bold;
+    padding: 2em 3em;
 }
 
 .contact-doc a {
