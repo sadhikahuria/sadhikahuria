@@ -632,11 +632,26 @@ nav ul li a:hover {
 }
  
 /* Education Section */
+
 #education {
     text-align: center;
-    padding: 3rem 1.5rem;
-    margin: 3rem auto;
-    max-width: 900px;
+    padding: 6rem 1.5rem;
+    margin: 5rem auto;
+    max-width: 1000px;
+}
+
+.hidden {
+    display: none;
+}
+
+.timeline-item, .course, .learning-card {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.timeline-item:hover, .course:hover, .learning-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 152, 0, 0.2);
 }
 
 .education-timeline {
@@ -667,13 +682,13 @@ nav ul li a:hover {
 #courses {
     text-align: center;
     padding: 3rem 1.5rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 3rem auto;
 }
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     gap: 15px;
     padding: 1.5rem;
 }
@@ -690,7 +705,9 @@ nav ul li a:hover {
     background-color: #f57c00;
     color: white;
     transition: transform 0.3s, background-color 0.3s;
+    gap: 20px;
 }
+
 
 .course:hover {
     transform: scale(1.05);
