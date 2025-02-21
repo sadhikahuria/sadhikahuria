@@ -54,7 +54,7 @@ nav ul li a:hover {
     color: #ff9800 !important;
 }
 
-/* Restore All Pages */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 3rem 2rem;
@@ -63,6 +63,64 @@ nav ul li a:hover {
     border-radius: 10px;
     margin: 2rem auto;
     width: 80%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(to right, #222, #444);
+    color: #ff9800;
+}
+
+.dark-mode .hero .btn {
+    background-color: #ff9800;
+    color: #222;
+}
+
+.dark-mode .hero .btn:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+/* Featured Section */
+.dark-mode .featured {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Services */
+.dark-mode .service {
+    background-color: #333;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.dark-mode .service h4 {
+    color: #ff9800;
 }
 
 .featured {
@@ -138,13 +196,6 @@ nav ul li a:hover {
     color: #555;
 }
 
-.project-desc {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #444;
-    display: none;
-}
-
 .expand-btn {
     background-color: #ff5722;
     color: white;
@@ -161,11 +212,16 @@ nav ul li a:hover {
     background-color: #ff9800;
 }
 
+.project-desc {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #444;
+    display: block;
+}
+
 .hidden {
     display: none;
 }
-
-/* Skills Page */
 #skills-page {
     text-align: center;
     padding: 2rem;
@@ -209,7 +265,6 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
-/* Dark Mode Adjustments */
 .dark-mode #skills-page {
     background-color: #222;
     color: #ddd;
@@ -227,6 +282,32 @@ nav ul li a:hover {
 .dark-mode .skills-list li {
     color: #ccc;
     border-bottom: 1px solid #555;
+}
+
+.dark-mode .projects-container {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-mode .project-card {
+    background: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-content h3 {
+    color: #ff9800;
+}
+
+.dark-mode .project-content p {
+    color: #ccc;
+}
+
+.dark-mode .expand-btn {
+    background-color: #ff9800;
+}
+
+.dark-mode .expand-btn:hover {
+    background-color: #ff5722;
 }
 
 /* Footer */
