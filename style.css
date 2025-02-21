@@ -54,10 +54,74 @@ nav ul li a:hover {
     color: #ff9800 !important;
 }
 
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: #fff;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.featured {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service {
+    max-width: 300px;
+    text-align: center;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.service h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 button.dark-mode-toggle {
     background-color: #333;
     color: #fff;
-    border: none;
+    border: 2px solid #555;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -82,63 +146,6 @@ button.dark-mode-toggle:hover {
     background-color: #ff9800;
     border-color: #ff9800;
     box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
-}
-
-section {
-    margin: 20px;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.profile-photo {
-    display: block;
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 35%;
-    margin: 0 auto 1rem;
-}
-
-.project {
-    margin-bottom: 2rem;
-}
-
-.project img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-}
-
-.project img:hover {
-    transform: scale(1.05);
-}
-
-#social {
-    text-align: center;
-}
-
-.social-buttons {
-    margin-top: 1rem;
-}
-
-.social-btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5em 1em;
-    margin: 0.5em;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.social-btn:hover {
-    background-color: #555;
-    transform: scale(1.1);
 }
 
 footer {
