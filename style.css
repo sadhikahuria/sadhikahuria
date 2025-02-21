@@ -635,9 +635,9 @@ nav ul li a:hover {
 
 #education {
     text-align: center;
-    padding: 6rem 1.5rem;
-    margin: 5rem auto;
-    max-width: 1000px;
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+    max-width: 900px;
 }
 
 .hidden {
