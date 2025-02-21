@@ -503,17 +503,17 @@ nav ul li a:hover {
 }
 
 .timeline-item {
-    background-color: #ff5722;
+    background-color: #fa6031;
     color: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
-    transition: transform 0.3s;
+    min-width: 200px;
+    max-width: 500px;
     text-align: center;
-    min-width: 180px;
-    max-width: 250px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow-wrap:break-word;
     position: relative;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 .timeline-item:hover {
@@ -538,13 +538,13 @@ nav ul li a:hover {
 }
 
 /* Fun Facts Section */
-.fun-facts {
+.fun-facts , .documents{
     text-align: center;
     padding: 3rem;
     margin: 4rem auto;
 }
 
-.facts-grid {
+.facts-grid , .documents-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -555,7 +555,7 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.fact-item {
+.fact-item , .document-item{
     background: #ff9800;
     color: white;
     padding: 15px;
@@ -620,17 +620,6 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.timeline-item {
-    background-color: #ff5722;
-    color: white;
-    padding: 12px;
-    border-radius: 10px;
-    min-width: 200px;
-    max-width: 280px;
-    text-align: center;
-    font-weight: bold;
-    transition: transform 0.3s, background-color 0.3s;
-}
 
 .timeline-item:hover {
     transform: scale(1.05);
@@ -719,7 +708,7 @@ nav ul li a:hover {
 }
 
 .learning-card a {
-    color: #ffeb3b;
+    color: #30649cd9;
     text-decoration: none;
     font-weight: bold;
 }
