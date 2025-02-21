@@ -310,6 +310,110 @@ nav ul li a:hover {
     background-color: #ff5722;
 }
 
+/* Contact Page Styling */
+#contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.dark-mode #contact {
+    background-color: #222;
+    color: #ddd;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(255, 87, 34, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-list:hover {
+    transform: scale(1.02);
+    background: rgba(255, 87, 34, 0.2);
+}
+
+.contact-list li {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-list a:hover {
+    color: #ff9800;
+    transform: scale(1.05);
+}
+
+.dark-mode .contact-list {
+    background: rgba(255, 152, 0, 0.1);
+}
+
+.dark-mode .contact-list:hover {
+    background: rgba(255, 152, 0, 0.2);
+}
+
+/* Interactive Social Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn:hover {
+    background-color: #ff9800;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .social-btn {
+    background-color: #ff9800;
+    color: #222;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .social-btn:hover {
+    background-color: #ff5722;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Fix alignment of "Connect with Me" */
+#social {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
