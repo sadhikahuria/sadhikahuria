@@ -74,13 +74,9 @@ button.dark-mode-toggle:hover {
 }
 
 section {
-    padding: 2rem;
+
     margin: 1rem auto;
-    border-radius: 5px;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: background-color 0.5s;
+
 }
 
 section h2 {
