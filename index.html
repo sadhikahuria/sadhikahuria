@@ -6,13 +6,10 @@
     <title>Sadhika Huria - Home</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-
     <script src="script.js"></script>
-
 </head>
-
 <body>
-    <header class = "my_header">
+    <header class="my_header">
         <h1>Sadhika Huria</h1>
         <nav>
             <ul>
@@ -25,17 +22,38 @@
             </ul>
         </nav>
     </header>
-
-    <section id = "home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hi! I am Sadhika Huria. I am a passionate computer science student. I am passionate about coding and creating websites. I am currently learning new technologies and frameworks to enhance my skills.</p>
-        <a href = "projects.html" class = "btn">View My Work</a>
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi! I am Sadhika Huria, a passionate Computer Science student eager to explore the world of technology. I specialize in software development, AI, and creating impactful digital experiences.</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+        <div class="featured">
+            <h3>What I Do</h3>
+            <div class="services">
+                <div class="service">
+                    <img src="./img/code-icon.png" alt="Coding Icon">
+                    <h4>Software Development</h4>
+                    <p>Building robust and efficient applications using modern frameworks and languages.</p>
+                </div>
+                <div class="service">
+                    <img src="./img/ai-icon.png" alt="AI Icon">
+                    <h4>Artificial Intelligence</h4>
+                    <p>Exploring AI models, machine learning, and automation to enhance productivity.</p>
+                </div>
+                <div class="service">
+                    <img src="./img/design-icon.png" alt="Design Icon">
+                    <h4>UI/UX & Web Design</h4>
+                    <p>Crafting user-friendly and visually appealing interfaces for web applications.</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
-        <button onclick="toggleDarkMode()" class = "dark-mode-toggle">Dark Mode</button>
+        <button onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</button>
     </footer>
-
 </body>
 </html>
