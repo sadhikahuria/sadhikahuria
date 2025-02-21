@@ -6,18 +6,15 @@
     <title>Sadhika Huria - About</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-
     <script src="script.js"></script>
-
 </head>
-
 <body>
-    <header class = "my_header">
+    <header class="my_header">
         <h1>Sadhika Huria</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active-page">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -26,21 +23,50 @@
         </nav>
     </header>
     
-    <section id = "aboutMe">
+    <section id="aboutMe" class="about-container">
         <h2>About Me</h2>
-        <img src="./img/profile-photo.jpg" alt= "Sadhika Huria" class="profile-photo">
-        <p>Hello! My name is Sadhika. I am passionate about software development and AI.</p>
-        <p>Learn more about my work on 
-            <a href = "https://github.com/sadhikahuria" target = "_blank">GitHub</a>
-             or connect with me on 
-            <a href ="https://www.linkedin.com/in/sadhika-huria-534b00269/" target="_blank">LinkedIn</a>.
-        </p>
+        <div class="profile-section">
+            <img src="./img/profile-photo.jpg" alt="Sadhika Huria" class="profile-photo">
+            <div class="bio">
+                <p>Hi, I'm <strong>Sadhika Huria</strong>—a passionate problem-solver and tech enthusiast. My love for mathematics and logical thinking led me to explore the world of Computer Science. Though I had no prior knowledge, I took a leap of faith, and now I'm fully immersed in learning, building, and creating.</p>
+            </div>
+        </div>
     </section>
 
+    <section id="journey" class="journey-section">
+        <h2>My Journey</h2>
+        <p>Mathematics was always my strength—solving problems felt like an art form to me. I enjoyed breaking down complex problems, showcasing each step as part of a bigger picture. When I heard Computer Science was related to math and critical thinking, I decided to give it a try. Now, I’m fully committed to improving my skills, mastering programming languages, and developing projects that make an impact.</p>
+    </section>
+    
+    <section id="milestones" class="timeline">
+        <h2>Key Milestones</h2>
+        <div class="timeline-container">
+            <div class="timeline-item" data-date="2020">📌 Early Love for Math & Problem-Solving</div>
+            <div class="timeline-item" data-date="2023">💡 Exploring CS with No Prior Knowledge</div>
+            <div class="timeline-item" data-date="2024">🚀 First Project - Realizing the Power of Code</div>
+            <div class="timeline-item" data-date="2025">🖥️ Developing Skills & Learning New Languages</div>
+            <div class="timeline-item" data-date="2028">🎯 Future Goal - Creating Impactful Projects</div>
+        </div>
+    </section>
+    
+    <section id="fun-facts" class="fun-facts">
+        <h2>Fun Facts About Me</h2>
+        <div class="facts-grid">
+            <div class="fact-item">🎭 <strong>Dancing</strong> - Trained in bhangra at Rangla Arts Academy, love dancing at parties!</div>
+            <div class="fact-item">🏸 <strong>Badminton</strong> - Played on my high school’s badminton team.</div>
+            <div class="fact-item">🎨 <strong>Drawing</strong> - Not great at it, but I find it relaxing!</div>
+            <div class="fact-item">💬 <strong>Extroverted</strong> - Love hanging out with friends and making memories.</div>
+        </div>
+    </section>
+    
+    <section id="inspiration" class="quote-section">
+        <h2>My Philosophy</h2>
+        <blockquote class="animated-quote">“Whatever happens, happens for the best.”</blockquote>
+    </section>
+    
     <footer>
         <p>@ 2025 Sadhika Huria. All rights reserved.</p>
         <button onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</button>
     </footer>
-
 </body>
 </html>
