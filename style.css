@@ -414,7 +414,194 @@ nav ul li a:hover {
     max-width: 800px;
 }
 
+/* About Me Page Styling */
+.about-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 4rem auto;
+    position: relative;
+    z-index: 1;
+}
 
+.dark-mode .about-container {
+    background-color: #222;
+    color: #ddd;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.bio {
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Journey Section */
+.journey-section {
+    padding: 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 800px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.dark-mode .journey-section {
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Horizontal Timeline with Better Text Wrapping */
+.timeline {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 900px;
+    position: relative;
+    z-index: 1;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 87, 34, 0.1);
+    border-radius: 10px;
+    white-space: normal;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.timeline-item {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+    min-width: 180px;
+    max-width: 250px;
+    position: relative;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.timeline-item:hover {
+    transform: scale(1.1);
+}
+
+.timeline-item::before {
+    content: attr(data-date);
+    display: block;
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dark-mode .timeline-container {
+    background: rgba(255, 152, 0, 0.1);
+}
+
+.dark-mode .timeline-item {
+    background-color: #444;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    text-align: center;
+    padding: 3rem;
+    margin: 4rem auto;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fact-item {
+    background: #ff9800;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.fact-item:hover {
+    transform: scale(1.05);
+}
+
+.dark-mode .fact-item {
+    background: #666;
+    color: #fff;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 4rem auto;
+    position: relative;
+    z-index: 1;
+}
+
+.dark-mode .quote-section {
+    background: linear-gradient(to right, #444, #666);
+    color: #ddd;
+}
+
+.animated-quote {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+ 
 
 /* Footer */
 footer {
