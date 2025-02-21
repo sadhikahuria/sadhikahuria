@@ -602,6 +602,135 @@ nav ul li a:hover {
     to { opacity: 1; }
 }
  
+/* Education Section */
+#education {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+    max-width: 900px;
+}
+
+.education-timeline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: rgba(255, 87, 34, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    background-color: #e64a19;
+}
+
+.dark-mode .education-timeline {
+    background: rgba(255, 152, 0, 0.1);
+}
+
+.dark-mode .timeline-item {
+    background-color: #ff9800;
+}
+
+/* Courses Grid */
+#courses {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 1.5rem;
+}
+
+.course {
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f57c00;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    background-color: #ef6c00;
+}
+
+.completed {
+    background-color: #4caf50;
+}
+
+.in-progress {
+    background-color: #ff9800;
+}
+
+.upcoming {
+    background-color: #03a9f4;
+}
+
+.dark-mode .course {
+    filter: brightness(0.95);
+}
+
+/* Outside Learning */
+#outside-learning {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.learning-card {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.learning-card:hover {
+    background-color: #e64a19;
+}
+
+.learning-card a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learning-card a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode .learning-card {
+    background-color: #ff9800;
+}
 
 /* Footer */
 footer {
