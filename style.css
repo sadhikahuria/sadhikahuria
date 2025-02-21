@@ -370,7 +370,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     margin-top: 40px;
     padding-bottom: 30px;
 }
@@ -544,6 +544,12 @@ nav ul li a:hover {
     margin: 4rem auto;
 }
 
+.contact-doc {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
 .facts-grid , .documents-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -564,7 +570,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.fact-item:hover {
+.fact-item:hover , .document-item:hover{
     transform: scale(1.05);
 }
 
@@ -573,6 +579,22 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.dark-mode .document-item {
+    background: #666;
+    color: #fff;
+}
+
+.documents a {
+    color: #ffffff;
+    text-decoration: none ;
+    font-weight: bold;
+}
+
+.contact-doc a {
+    color: #ffffff;
+    text-decoration: none ;
+    font-weight: bold;
+}
 /* Quote Section */
 .quote-section {
     text-align: center;
