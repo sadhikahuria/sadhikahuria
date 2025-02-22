@@ -53,3 +53,8 @@ document.querySelectorAll('.document-item a').forEach(link => {
             link.innerHTML += " (Error)";
         });
 });
+
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
