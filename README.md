@@ -13,7 +13,7 @@ This is my personal website showcasing my skills, projects, and education. It in
 - GitHub Pages for deployment
 
 ## Deployment
-[Website Link](https://sadhikahuria.github.io/sadhikahuria)
+[Website Link](https://sadhikahuria.github.io)
 
 ## License
 This project is licensed under the MIT License.
