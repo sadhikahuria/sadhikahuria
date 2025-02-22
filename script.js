@@ -39,3 +39,17 @@ function toggleDescription(id) {
     const desc = document.getElementById(id);
     desc.classList.toggle('hidden');
 }
+
+document.querySelectorAll('.document-item a').forEach(link => {
+    fetch(link.href, { method: 'HEAD' })
+        .then(response => {
+            if (!response.ok) {
+                link.style.color = 'red';
+                link.innerHTML += " (Not Found)";
+            }
+        })
+        .catch(() => {
+            link.style.color = 'red';
+            link.innerHTML += " (Error)";
+        });
+});
