@@ -1,16 +1,19 @@
-## Hi there 👋
+# Personal Portfolio - Sadhika Huria
 
-<!--
-**sadhikahuria/sadhikahuria** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Description
+This is my personal website showcasing my skills, projects, and education. It includes:
 
-Here are some ideas to get you started:
+- A bio with a personal journey
+- A list of projects with links to GitHub
+- A skills section
+- Contact information with external links
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Technologies Used
+- HTML, CSS, JavaScript
+- GitHub Pages for deployment
+
+## Deployment
+[Website Link](https://sadhikahuria.github.io/sadhikahuria)
+
+## License
+This project is licensed under the MIT License.
