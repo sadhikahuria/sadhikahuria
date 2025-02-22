@@ -484,6 +484,25 @@ nav ul li a:hover {
     color: #ddd;
 }
 
+/* tutoring section */
+.tutoring-section {
+    padding: 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 800px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.dark-mode .tutoring-section {
+    background-color: #333;
+    color: #ddd;
+}
+
+
 /* Horizontal Timeline with Better Text Wrapping */
 .timeline {
     text-align: center;
